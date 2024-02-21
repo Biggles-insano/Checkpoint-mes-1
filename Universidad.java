@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-// Interfaz para los usuarios
+// Interfaz 
 interface Usuario {
     void mostrarMenu();
 }
 
-// Clases concretas para los diferentes tipos de usuarios
+// Clases para los diferentes tipos de usuarios
 class Estudiante implements Usuario {
     public void mostrarMenu() {
         System.out.println("Opciones para Estudiante:");
@@ -48,7 +48,7 @@ class AuditorExterno implements Usuario {
     }
 }
 
-// Factory para crear instancias de usuarios
+// Factory 
 class UsuarioFactory {
     public static Usuario crearUsuario(String tipo) {
         switch (tipo) {
